@@ -34,6 +34,11 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e -V "
+    }
+  },
   "lint-staged": {
     "*.{js,vue}": [
       "vue-cli-service lint",
