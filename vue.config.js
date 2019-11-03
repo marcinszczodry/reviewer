@@ -9,7 +9,7 @@ module.exports = {
       patterns: [path.resolve(__dirname, './src/styles/global.scss')],
     },
     svgSprite: {
-      dir: 'src/assets/icons',
+      dir: './src/assets/icons',
       test: /\.(svg)(\?.*)?$/,
       loaderOptions: {
         extract: true,
