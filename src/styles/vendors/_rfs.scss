@@ -315,3 +315,54 @@ $rfs-mq-property-height: if($rfs-mode == max-media-query, max-height, min-height
 @mixin margin-left($value) {
   @include rfs($value, margin-left);
 }
+
+// Custom shorthand helper mixins
+@mixin size($width, $height: null) {
+  @include rfs($width, width);
+  @if not($height) {
+    @include rfs($width, height);
+  } else {
+    @include rfs($height, height);
+  }
+}
+@mixin width($value) {
+  @include rfs($value, width);
+}
+
+@mixin height($value) {
+  @include rfs($value, height);
+}
+
+@mixin border($expr) {
+  @include rfs($expr, border);
+}
+
+@mixin border-width($value) {
+  @include rfs($value, border-width);
+}
+
+@mixin border-bottom-width($value) {
+  @include rfs($value, border-bottom-width);
+}
+
+@mixin border-top-width($value) {
+  @include rfs($value, border-top-width);
+}
+
+@mixin border-right-width($value) {
+  @include rfs($value, border-right-width);
+}
+
+@mixin border-left-width($value) {
+  @include rfs($value, border-left-width);
+}
+
+@mixin box-shadow($expr...) {
+  $list: args-to-list($expr);
+  @include rfs($list, box-shadow);
+}
+
+@mixin text-shadow($expr...) {
+  $list: args-to-list($expr);
+  @include rfs($list, text-shadow);
+}
