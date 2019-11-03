@@ -42,10 +42,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
   .svg-icon {
     fill: currentColor;
-    height: 24px;
-    width: 24px;
+    @include size(24px);
   }
 </style>
