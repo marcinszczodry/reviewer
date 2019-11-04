@@ -1,3 +1,35 @@
 /* RFS */
 $rfs-breakpoint-unit: 'em'; // media queries use 'em' unit
 $rfs-breakpoint: 1440px; // above this breakpoint, the value will be static
+$colors: (
+  "deep-black": #000000,
+  "plain-white": #FFFFFF,
+  "cold-blue": #0057FF,
+);
+
+$variations: (
+  light: (
+    function: tint,
+    parameters: 50%
+  ),
+  lighter: (
+    function: tint,
+    parameters: 70%
+  ),
+  lightest: (
+    function: tint,
+    parameters: 85%
+  ),
+  dark: (
+    function: shade,
+    parameters: 4%
+  ),
+  darker: (
+    function: shade,
+    parameters: 8%
+  ),
+  darkest: (
+    function: shade,
+    parameters: 16%
+  ),
+);
