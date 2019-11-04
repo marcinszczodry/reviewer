@@ -15,6 +15,7 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Raleway:500,600,700&display=swap');
 
   body {
+    -webkit-text-size-adjust:100%; // fix sizing issue on Chrome Mobile
     font-family: "Raleway", sans-serif;
     font-weight: weight(semibold);
   }
