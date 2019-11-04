@@ -30,3 +30,7 @@
   }
   @return $color;
 }
+
+@function weight($w) {
+  @return map-get($map: $weights, $key: $w);
+}
